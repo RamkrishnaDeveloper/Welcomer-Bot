@@ -1,2 +1,4 @@
 # Welcomer Bot Code
-<h2>Made By Krishna</h2> 
+
+<h2>Coded By QC Devs</h2>
+<h2>Upgraded By Krishna</h2> 
