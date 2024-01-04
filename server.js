@@ -1,3 +1,5 @@
+// The Heading Start
+
 const Discord = require("discord.js");
 const fs = require("fs");
 const db = require("old-wio.db");
@@ -7,10 +9,17 @@ const { Default_Prefix, Token, Color, Support, Owner, WelcomeImage, LeaveImage }
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
+// The Heading End
+
+// The Status Start
 client.on("ready", async () => {
   console.log(`Bot Is Ready To Go!\nTag: ${client.user.tag}`);
   client.user.setActivity(`Welcome`, { type: "PLAYING" });
 });
+
+// The Status End
+
+// The Main Code Start
 
 let modules = ["Config", "Other"];
 
@@ -112,4 +121,8 @@ client.on("guildMemberRemove", async member => {
   return client.channels.cache.get(Channel).send(Msg, Attachment);
 });
 
+// The Main Code End
+
+// The Login Start
 client.login(Token).catch(() => console.log(`Invalid Token Is Provided - Please Give Valid Token!`));
+// The Login End
